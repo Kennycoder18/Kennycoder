@@ -1,0 +1,252 @@
+
+/* General Styling */
+*{
+    transition: 0.4s ease-in-out;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* menu styling  */
+li{
+    font-family: Arial;
+    margin-top: 0;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: rgb(73, 73, 241);
+    cursor: pointer;
+}
+li hr{
+    height: 35px;
+    margin-top: -10px;
+    background-color: rgb(73, 73, 241);
+    border-color: rgb(73, 73, 241);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 18px;
+    margin-left: -9px;
+}
+li:hover{
+    border-bottom: 1px solid rgb(73, 73, 241);
+    color: white;
+}
+
+/* header styling */
+header{
+    height: 90vh;
+}
+#myH1{
+    font-family: cursive;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 140px;
+}
+#myP{
+    text-align: center;
+    padding: 12px;
+}
+
+/* main content*/
+hr{
+    color: rgb(29, 29, 29);
+    width: 90%;
+}
+button{
+    color: white;
+    background-color: rgb(73, 73, 241);
+    border: none;
+    margin-left: 30px;
+    width: 60px;
+    height: 25px;
+    border-radius: 6px;
+}
+
+/* Section */
+.section{
+    display: block;
+}
+.para{
+    margin: initial;
+    text-wrap: wrap;
+}
+.section h1{
+    font-family: cursive;
+    font-size: 50px;
+    padding: 30px;
+    transition: 0.3s ease-in;
+}.section p{
+    padding: 50px;
+    font-family: cursive;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 2px;
+}
+b{
+    color: rgb(73, 73, 241);
+}
+h2{
+    font-family: cursive;
+    font-size: 40px;
+}
+.container{
+    border: 1px solid rgb(54, 54, 54);
+    height: auto;
+    text-align: center; 
+    padding: 45px;
+    background-color: rgb(37, 37, 37);
+    background-color: transparent;
+}
+h3{
+    font-size: 18px;
+    font-family: cursive;
+    color: white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* glowing text */
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(73, 73, 241), 0 0 40px rgb(73, 73, 241), 0 0 50px rgb(73, 73, 241), 0 0 60px rgb(73, 73, 241), 0 0 70px rgb(73, 73, 241);
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px rgb(98, 98, 240), 0 0 40px rgb(98, 98, 240), 0 0 50px rgb(98, 98, 240), 0 0 60px rgb(98, 98, 240), 0 0 70px rgb(98, 98, 240), 0 0 80px rgb(98, 98, 240);
+    }
+}     
+#myVideo{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+/* Company section styling */
+.company{
+    text-align: center; 
+    padding: 20px;
+}
+.company h2{
+    font-size: 48px;
+}
+.company p{
+    text-align: initial;
+}
+.company img{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}.read{
+    border: 2px solid white;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    float: left;
+}
+span{
+    background-color: rgb(73, 73, 241);
+    font-size: 12px;
+    width: 88px;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    float: right;
+    margin: 15px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+/* Blog styling */
+* {box-sizing:border-box}
+/* Container for skill bars */
+.bar{
+    width: 100%; 
+    background-color: #ddd; 
+}
+.skills {
+    text-align: right; 
+    padding-top: 20px; 
+    padding-bottom: 10px; 
+    color: white; 
+}
+
+.html {width: 90%; background-color: #4CAF50;} 
+.css {width: 80%; background-color: #2196F3;} 
+.js {width: 65%; background-color: #f44336;}
+
+/* article styling */
+article ul{
+    display: inline-block;
+}
+article li{
+    padding-top: 10px;
+}
+
+/* repo div styling*/
+.repo{
+    font-family: cursive;
+    font-size: 24px;
+    color: grey;
+    list-style: none;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.repo li, a:hover{
+    border-bottom: unset;
+    text-decoration: unset;
+}
+
+/* footer styling */
+.wrap{
+    text-align: center;
+    background: 100%;
+    padding: 50px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+.wrap h4{
+    font-family: cursive;
+    color: rgb(128, 128, 128);
+}
+footer ul{
+    display: inline-block;
+}
+footer li{
+    font-family: cursive;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    list-style-type: none;
+    text-decoration: none;
+}
+footer a{
+    text-decoration: none;
+}
+footer p, h4{
+    font-family: cursive;
+    font-size: 23px;
+    color: grey;
+}
+footer a:hover{
+    color: white;
+}
+/* End of Code */
