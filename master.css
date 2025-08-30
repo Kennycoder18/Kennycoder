@@ -1,0 +1,13 @@
+
+/* responsive design --mobile phone view*/
+
+@media only screen and (max-width: 768px) {
+  #myVideo{
+    max-width: 100%;
+  }
+  .videos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
