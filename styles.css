@@ -1,14 +1,12 @@
-
 /* General Styling */
 *{
-    transition: 0.4s ease-in-out;
-}
-body{
     margin: 0;
     padding: 0;
-    background-color: rgb(31, 30, 30);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    /* padding-inline: 20%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -16,163 +14,175 @@ html{
 
 /* menu styling  */
 li{
-    font-family: Arial;
-    margin-top: 0;
-    letter-spacing: 1px;
-    font-size: 10px;
-    color: rgb(73, 73, 241);
+    display: inline-block;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(97, 176, 255);
     cursor: pointer;
 }
-li hr{
-    height: 35px;
-    margin-top: -10px;
-    background-color: rgb(73, 73, 241);
-    border-color: rgb(73, 73, 241);
+a{
+    text-decoration: none;
 }
-ul{
-    list-style-type: none;
-    display: flex;
-    gap: 18px;
-    margin-left: -9px;
+.menu li a:hover{
+    color: rgb(159, 207, 255);
+    transition: 0.4s ease-in-out;
 }
-li:hover{
-    border-bottom: 1px solid rgb(73, 73, 241);
-    color: white;
+.menu li a:active{
+    color: rgb(178, 216, 253);
 }
 
 /* header styling */
+.menu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    margin: 0;
+    padding-top: 35px;
+}
+.spread{
+    width: 100%;
+    height: 3px;
+    position: relative;
+    background-color: #2196F3;
+}
 header{
+    width: 100%;
     height: 90vh;
+    background-image: url(wallpaper-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #myH1{
-    font-family: cursive;
+    color: whitesmoke;
     font-size: 55px;
     text-align: center;
     padding-top: 140px;
 }
 #myP{
     text-align: center;
-    padding: 12px;
-}
+    font-weight: 800;
+    font-size: 17px;
+    padding: 15px;
+    color: yellow;
+    letter-spacing: 6px;
+}    
 
-/* main content*/
-hr{
-    color: rgb(29, 29, 29);
-    width: 90%;
-}
-button{
-    color: white;
-    background-color: rgb(73, 73, 241);
-    border: none;
-    margin-left: 30px;
-    width: 60px;
-    height: 25px;
-    border-radius: 6px;
-}
-
-/* Section */
+/*section*/
 .section{
     display: block;
+    background-color: rgb(229, 241, 252);
 }
 .para{
-    margin: initial;
     text-wrap: wrap;
 }
 .section h1{
-    font-family: cursive;
     font-size: 50px;
-    padding: 30px;
-    transition: 0.3s ease-in;
-}.section p{
-    padding: 50px;
-    font-family: cursive;
-    font-size: 20px;
-    line-height: 33px;
-    letter-spacing: 2px;
+    text-align: center;
+    padding: 60px;
 }
-b{
-    color: rgb(73, 73, 241);
+.section p{
+    padding-inline: 15%;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+    line-height: normal;
+    letter-spacing: normal;
 }
 h2{
-    font-family: cursive;
     font-size: 40px;
 }
 .container{
-    border: 1px solid rgb(54, 54, 54);
     height: auto;
     text-align: center; 
-    padding: 45px;
-    background-color: rgb(37, 37, 37);
-    background-color: transparent;
+    padding-inline: 15px;
+}
+b{
+    color: #2196F3;
 }
 h3{
-    font-size: 18px;
-    font-family: cursive;
-    color: white;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-/* glowing text */
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(73, 73, 241), 0 0 40px rgb(73, 73, 241), 0 0 50px rgb(73, 73, 241), 0 0 60px rgb(73, 73, 241), 0 0 70px rgb(73, 73, 241);
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px rgb(98, 98, 240), 0 0 40px rgb(98, 98, 240), 0 0 50px rgb(98, 98, 240), 0 0 60px rgb(98, 98, 240), 0 0 70px rgb(98, 98, 240), 0 0 80px rgb(98, 98, 240);
-    }
+    font-size: 24px;
+    color: rgb(58, 58, 58);
+    padding: 30px;
 }     
 #myVideo{
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px;
-    transition: 0.5s;
+    max-width: 500px;
+    max-height: 200px;
+    padding: 10px;
+}
+video{
+    border-radius: 5px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-inline: 20%;
+    flex-wrap: wrap;
+
 }
 
 /* Company section styling */
 .company{
-    text-align: center; 
-    padding: 20px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    background-color: rgb(53, 53, 53);
+    border-bottom-style: groove;
 }
 .company h2{
+    color: whitesmoke;
     font-size: 48px;
+    padding: 30px;
 }
 .company p{
     text-align: initial;
+    padding-inline: 15%;
 }
 .company img{
-    width: 300px;
+    width: 200px;
     height: auto;
     border-radius: 50%;
-}.read{
-    border: 2px solid white;
-    width: 100px;
-    height: 50px;
-    margin: 15px;
-    background-color: transparent;
-    border-radius: 10px;
-    float: left;
 }
-span{
-    background-color: rgb(73, 73, 241);
-    font-size: 12px;
-    width: 88px;
-    height: 30px;
-    text-align: center;
-    padding: 10px;
-    border-top-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    float: right;
+button.read{
+    border: none;
+    width: 200px;
+    height: 70px;
     margin: 15px;
-    line-height: normal;
-    letter-spacing: normal;
+    font-size: 18px;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(4, 255, 4), rgb(0, 191, 255));
+    color: whitesmoke;
+    border-radius: 50px;
 }
 
-/* Blog styling */
-* {box-sizing:border-box}
 /* Container for skill bars */
+#Projects{
+    background-image: url(getcertified.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+    padding-inline: 15%;
+    padding-top: 60px;
+}
+#Projects h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+}
+#Projects h3{
+    color: yellow;
+}
 .bar{
     width: 100%; 
     background-color: #ddd; 
@@ -184,9 +194,9 @@ span{
     color: white; 
 }
 
-.html {width: 90%; background-color: #4CAF50;} 
+.html {width: 90%; background-color: #ff7300;} 
 .css {width: 80%; background-color: #2196F3;} 
-.js {width: 65%; background-color: #f44336;}
+.js {width: 65%; background-color: #fae900;}
 
 /* article styling */
 article ul{
@@ -198,9 +208,8 @@ article li{
 
 /* repo div styling*/
 .repo{
-    font-family: cursive;
     font-size: 24px;
-    color: grey;
+    color: white;
     list-style: none;
     line-height: 30px;
     letter-spacing: 1px;
@@ -211,11 +220,12 @@ article li{
 }
 
 /* footer styling */
-.wrap{
+footer{
+    display: block;
     text-align: center;
     background: 100%;
     padding: 50px;
-    background-color: rgb(49, 49, 49);
+    background-image: linear-gradient(45deg,rgb(4, 255, 255), rgb(1, 138, 250));
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -224,14 +234,9 @@ article li{
     gap: 5em;
 }
 .wrap h4{
-    font-family: cursive;
-    color: rgb(128, 128, 128);
-}
-footer ul{
-    display: inline-block;
+    color: whitesmoke;
 }
 footer li{
-    font-family: cursive;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 2px;
@@ -240,13 +245,10 @@ footer li{
 }
 footer a{
     text-decoration: none;
+    color: white;
 }
 footer p, h4{
-    font-family: cursive;
     font-size: 23px;
-    color: grey;
-}
-footer a:hover{
-    color: white;
+    color: ghostwhite;
 }
 /* End of Code */
