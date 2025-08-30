@@ -5,28 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo_3.jpg">
     <link rel="stylesheet" href="styles.css">
-    <title>@Kennycoder</title>
+    <link rel="stylesheet" href="master.css">
+    <title>Kennycoder</title>
 </head>
 <body>
     <div class="menu">
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#Projects">PROJECTS</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><hr></li>
-        </ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
     </div>
+    <div class="spread"></div>
     <header id="header">
-        <h1 id="myH1">Welcome to my Website!</h1>
-        <p id="myP">...About Me!</p>
+        <h1 id="myH1">Hello World</h1>
+        <p id="myP"><em>WELCOME TO MY BRAND NEW WEBSITE..</em></p>
     </header>
     <div class="main">
-        <hr>
-        <br>
-        <button type="button" onclick="myfunction()">ReadMe</button>
-        <p id="demo"></p>
         <div class="section">
-            <h1><b>Web Development</b><br>& Design</h1>
+            <h1><b>Web Development</b> & Design</h1><br>
             <p class="para">Web Design is a specialisation of design stream. It deals with the use of relevant softwares, writing code  and mark up validators to create design elements.
                Designing Web applications requires a prior understanding of Code languages e.g HTML(Hyper Text Markup Language), CSS(Cascading Style Sheets), JavaScript and more.. 
                Web developers use I.D.Es(Integrated Development Environment) also known as text editors e.g Visual Studio, VScode, Atom, Sublime text, Vim and more..
@@ -34,11 +29,28 @@
                whereas Backend works on logic and dynamic functionality(C#,C++,SQL,PHP<br>,Ruby,Python) of the web application.
             </p>
             <div class="container">
-                <h3>Watch this amazing video!</h3>
+                <h3>WATCH THESE AMAZING VIDEOS</h3>
                 <br>
-                <video autoplay muted loop id="myVideo" controls>
-                    <source src="myvideo.mp4" type="video/mp4">
-                </video>
+                <div class="videos">
+                    <video autoplay muted loop id="myVideo" controls>
+                        <source src="vid-1.mp4" type="video/mp4">
+                    </video>
+                    <video autoplay muted loop id="myVideo" controls>
+                        <source src="vid-2.mp4" type="video/mp4">
+                    </video>
+                    <video autoplay muted loop id="myVideo" controls>
+                        <source src="vid-3.mp4" type="video/mp4">
+                    </video>
+                    <video autoplay muted loop id="myVideo" controls>
+                        <source src="vid-4.mp4" type="video/mp4">
+                    </video>
+                    <video autoplay muted loop id="myVideo" controls>
+                        <source src="vid-5.mp4" type="video/mp4">
+                    </video>
+                    <video autoplay muted loop id="myVideo" controls>
+                        <source src="vid-6.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div class="company">
                 <h2>Developers' Hub!</h2>
@@ -47,61 +59,51 @@
                     The <b>Developers' Hub</b> is a private Software Company certified by UCC to execute effectiveness in Information technology and promote Cyber literacy in Uganda.
                     Its glorious purpose is to enhance technological Ideologies in people through access to information via <b>Websites</b> and service via softwares.
                     <br>
-                    <button class="read">Read More</button>
-                    <span id=Top type="button">Back to Top</span>
-                </p>
+                </p>    
+                <button class="read">Read More</button>
             </div>
         </div>
-        <div id="Projects">
-            <div class="container">
-                <h2>Projects' Blog!</h2>
-                <h3>My Skills</h3>
-                <div class="skills">
-                    <label>HTML</label>
-                    <div class="bar-1">
-                      <div class="skills html">90%</div>
-                    </div>
-                    
-                    <label>CSS</label>
-                    <div class="bar-2">
-                      <div class="skills css">80%</div>
-                    </div>
-                    
-                    <label>JavaScript</label>
-                    <div class="bar-3">
-                      <div class="skills js">65%</div>
-                    </div>
-                </div><br>
-                <article><br>
-                    <div class="container">
-                        <h4>I've involved in a number of projects that inculde;</h4>
-                        <ul>
-                            <li>School websites</li>
-                            <li>Restaurant</li>
-                            <li>Cafe</li>
-                            <li>Supermarket</li>
-                            <li>Medical Center(Clinic)</li>
-                        </ul>
-                    </div
-                </article>
-                <div class="repo">
-                    <h1>Popular Repositories</h1>
-                    <p>...follow links to see some Repositories on Github!</p>
-                    <li><a href="https://github.com/Kennycoder18">Personal Blog</a></li>
-                    <li><a href="https://github.com/Kennydev17">School sites</a></li>
-                    <a href="https://github.com/">Create an account on Github</a>
+    </div>
+    <div id="Projects">
+        <div class="container">
+            <h2>Projects' Blog!</h2>
+            <h3>My Skills</h3>
+            <div class="skills">
+                <label>HTML</label>
+                <div class="bar-1">
+                  <div class="skills html">90%</div>
                 </div>
+                
+                <label>CSS</label>
+                <div class="bar-2">
+                  <div class="skills css">80%</div>
+                </div>
+                
+                <label>JavaScript</label>
+                <div class="bar-3">
+                  <div class="skills js">65%</div>
+                </div>
+            </div><br>
+            <br>
+            <article>
+                <div class="container">
+                    <h4>I've involved in a number of projects that inculde;</h4>
+                    <ul>
+                        <li>School websites</li>
+                        <li>Restaurant</li>
+                        <li>Cafe</li>
+                        <li>Supermarket</li>
+                        <li>Medical Center(Clinic)</li>
+                    </ul>
+                </div
+            </article>
+            <div class="repo">
+                <h1>Popular Repositories</h1>
+                <p>...follow links to see some Repositories on <a href="https://github.com/Kennycoder18">Github!</a></p>
             </div>
         </div>
     </div>
     <footer class="wrap">
-        <div>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        </div>
         <div>
             <h4>Join W3 Schools!<br><br><a href="https://www.w3schools.com"><img src="w3schools.png" alt="w3schools logo"></a></h4>
         </div>
@@ -111,7 +113,7 @@
             <li><a href="https://www.Vue.com">Vue.Js</a></li>
             <li><a href="https://www.Angular.org">Angular.Js</a></li>
         </div>
-        <p>&copy;2025 My Webite</p>
+        <p>&copy;2025 Kennycoder.site</p>
     </footer>
     <script src="Script.js"></script>
 </body>
