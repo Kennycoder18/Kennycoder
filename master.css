@@ -2,12 +2,24 @@
 /* responsive design --mobile phone view*/
 
 @media only screen and (max-width: 768px) {
-  #myVideo{
+  iframe{
     max-width: 100%;
   }
   .videos{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+  body h2{
+    font-size: 30px;
+
+  }
+  body h3{
+    font-size: 18px;
+    padding: 15px;
+  }
+  body p{
+    font-size: 13px;
+    padding-inline: 10px;
   }
 }
