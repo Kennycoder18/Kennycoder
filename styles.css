@@ -59,16 +59,6 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
-#Top{
-    width: 80px;
-    height: 80px;
-    background-color: rgb(51, 51, 51);
-    border-radius: 50%;
-    color: white;
-    top: -130px;
-    position: relative;
-    margin: 30px;
-}
 #myH1{
     color: whitesmoke;
     font-size: 55px;
@@ -122,13 +112,11 @@ h3{
     color: rgb(58, 58, 58);
     padding: 30px;
 }     
-#myVideo{
+iframe{
     position: relative;
-    max-width: 500px;
+    max-width: 560px;
     max-height: 200px;
     padding: 10px;
-}
-video{
     border-radius: 5px;
 }
 .videos{
@@ -138,11 +126,11 @@ video{
     justify-content: center;
     margin-inline: 20%;
     flex-wrap: wrap;
-
 }
 
 /* Company section styling */
 .company{
+    width: 100%;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px; 
@@ -261,4 +249,16 @@ footer p, h4{
     font-size: 23px;
     color: ghostwhite;
 }
+/* Initial state */
+/* div {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Animated state */
+/* div.animate {
+    opacity: 1;
+    transform: translateY(0);
+} */
 /* End of Code */
